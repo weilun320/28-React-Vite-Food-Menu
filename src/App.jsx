@@ -61,6 +61,16 @@ function Category({ title, foods }) {
   );
 }
 
+function Footer() {
+  return (
+    <>
+      <div className="text-center text-light">
+        &copy; 2023 Wei Lun. All right reserved.
+      </div>
+    </>
+  );
+}
+
 const allergenInfo = [
   { background: "info", info: "Halal" },
   { background: "warning", info: "Egg" },
@@ -87,7 +97,7 @@ const friedChicken = (
         alt: "Fried Chicken",
         class: "card-img object-fit-cover",
         height: 200,
-        src: "../public/assets/fried-chicken.jpg",
+        src: "./public/assets/fried-chicken.jpg",
         width: 200
       }}
     />
@@ -107,7 +117,7 @@ const friedChicken = (
         alt: "Nuggets",
         class: "card-img object-fit-cover",
         height: 200,
-        src: "../public/assets/nugget.jpg",
+        src: "./public/assets/nugget.jpg",
         width: 200
       }}
     />
@@ -133,7 +143,7 @@ const desserts = (
         alt: "Ice Cream",
         class: "card-img object-fit-cover",
         height: 200,
-        src: "../public/assets/ice-cream.jpg",
+        src: "./public/assets/ice-cream.jpg",
         width: 200
       }}
     />
@@ -154,7 +164,7 @@ const desserts = (
         alt: "Apple Pie",
         class: "card-img object-fit-cover",
         height: 200,
-        src: "../public/assets/apple-pie.jpg",
+        src: "./public/assets/apple-pie.jpg",
         width: 200
       }}
     />
@@ -172,7 +182,7 @@ function App() {
               alt: "Wei Lun's Diner",
               class: "object-fit-contain mb-4",
               height: 100,
-              src: "../public/assets/logo.png",
+              src: "./public/assets/logo.png",
               width: 200
             }}
             />
@@ -187,6 +197,7 @@ function App() {
             <Category title={"Desserts"} foods={desserts} />
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
